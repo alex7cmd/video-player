@@ -1,0 +1,79 @@
+<!DOCTYPE html> <html lang="es">
+<head>
+	<meta charset="UTF-8" >
+	<meta name="description" 
+	content="Video Player - Portafolio de Alejandro Fernández Díaz, Diseñador">
+	<meta name="robots" 
+	content="index,follow">
+	<meta http-equiv="X-UA-Compatible" 
+	content="IE=edge" >
+	<title>Video Player</title>
+	<meta name="viewport" 
+	content="width=device-width, initial-scale=1.0" >
+	<!-- mobile -->
+	<link href="./css/cssmob-1.css" 
+			rel="stylesheet"
+			media="screen and (min-width: 320px)" >
+	<link href="./css/cssmob-2.css" 
+			rel="stylesheet"
+			media="screen and (min-width: 375px)" >
+	<!-- tablet -->
+	<link href="./css/csstablet-1.css" 
+	rel="stylesheet" 
+	media="screen and (min-width: 568px)" >
+	<link href="./css/csstablet-2.css" 
+			rel="stylesheet" 
+			media="screen and (min-width: 768px)" >
+	<!-- desk -->
+	<link href="./css/desk.css" 
+			rel="stylesheet"  
+			media="screen and (min-width: 1024px)" >
+	<!-- Todo el codigo desde Mobile -->
+	<link rel="preconnect" 
+	href="https://fonts.googleapis.com">
+	<link rel="preconnect" 
+	href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;800&family=Roboto:wght@100;300;400;500;900&display=swap" 
+	rel="stylesheet">
+</head> <body>
+<!-- Hero -->
+<section class="title">浜崎あゆみ</section>
+
+<div class="wrapper">
+	<div class="logo"></div>
+	<div class="player">
+		<video id="video" poster="./img/ayumi.webp" src="./img/Ayumi_Hamasaki-Mirrorcle_World_.webm" preload ></video>
+		<!-- <video controls preload autoplay muted src="./img/Ayumi_Hamasaki-Mirrorcle_World_.mp4"></video> -->
+		<!-- <video id="video" poster="" src="" preload >
+			<source src="./img/Ayumi_Hamasaki-Mirrorcle_World_.mp4" type="video/mp4">
+			<source src="./img/Ayumi_Hamasaki-Mirrorcle_World_.webm" type="video/webm">
+			Descarga el formato 
+			<a href="./img/Ayumi_Hamasaki-Mirrorcle_World_.mp4">webm</a> 
+			o 
+			<a href="./img/Ayumi_Hamasaki-Mirrorcle_World_.webm">mp4</a>
+		</video> -->
+		<div class="player-overlay">
+			<h2 class="player-title">浜崎あゆみ</h2>
+			<div class="player-actions">
+				<button class="button" id="backward" aria-label="retroceder 10 segundos" title="retroceder 10 segundos"></button>
+				<button class="button" id="play" aria-label="reproducir" title="reproducir"></button>
+				<button class="button" hidden id="pause" aria-label="pausar" title="pausar"></button>
+				<button class="button" id="forward" aria-label="delantar 10 segundos" title="adelantar 10 segundos"></button>
+			</div>
+			<div class="player-progress">
+				<input id="progress" type="range" min="0" value="0" step="1">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="space"></div>
+
+<script src="./js/index.js"></script>
+<!--footer-->
+<footer class="">
+	<section class="version">
+		Alejandro  Alfonso Fernández Díaz <br>
+		2022.
+	</section>
+</footer> <!--footer--> </body></html> 

@@ -1,0 +1,102 @@
+/* Screen 320 */
+@import './buttons.css';
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html{
+	font-size: 62.5%;
+	/* equivalente a numeros secuenciales 16, 17, 18 ...  */
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #425876;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title{
+		text-align: center;
+		margin-block-start: 50px;
+		color: #ffffff;
+		font-size: 2rem;
+}
+
+.wrapper{
+    max-inline-size: 900px;	
+    margin: auto;
+}
+
+.logo{
+	background-image: url('../img/ayumi.svg');
+	width: 150px;
+	height: 110px;
+	background-repeat: no-repeat;
+	position: absolute;
+	margin-inline-start: 55%;
+    margin-block-start: 50px;
+}
+
+.player{
+	margin-block-start: 50px;
+	position: relative;
+}
+
+.player video {
+    inline-size: 100%;
+	/* aspect-ratio: 16/9; */
+	vertical-align: middle;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.player-title{
+	color: #ffffff;
+	position: absolute;
+	inset-block-start: 20px;
+	inset-inline: 20px;
+}
+
+.player-actions{
+	position: absolute;
+	inset: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.player-overlay{
+	position: absolute;
+	inset: 0;
+	opacity: 0;
+	transition: .4s opacity;
+}
+
+.player:hover .player-overlay{
+	opacity: 1;
+}
+
+.player-progress{
+	position: absolute;
+	inset-block-end:0;
+	inset-inline: 0;
+	display: flex;
+	padding: 10px;
+}
+
+.player-progress input{
+	flex: 1;
+}
+
+footer{
+	text-align: center;
+	color: #ffffff;
+}
+
+.version{
+	margin-block-start: 50px;
+}
